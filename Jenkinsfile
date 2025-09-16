@@ -1,9 +1,10 @@
 pipeline{
     agent any
     stages{
-        stage("A"){
+        stage("Build"){
             steps{
                 echo "========executing A========"
+                sh 'mvn --version'
             }
            
         }
